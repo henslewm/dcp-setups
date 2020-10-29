@@ -1,0 +1,129 @@
+<SetupFile>
+	<Engine>
+		<Settings
+			Version = "3.4.0.6"
+		/>
+	</Engine>
+	<ModuleList>
+	</ModuleList>
+	<LogList>
+		<Log
+			Name = "\Flash Disk\system.log"
+			Size = "65536"
+			Wrap = "true"
+			IgnoreQuality = "false"
+			AddHeaderOnExport = "true"
+			ReplaceBadValOnExport = "false"
+			BadValOnExport = "-99999"
+		/>
+		<Log
+			Name = "\Flash Disk\ssp.log"
+			Size = "1200000"
+			Wrap = "true"
+			IgnoreQuality = "false"
+			AddHeaderOnExport = "true"
+			ReplaceBadValOnExport = "false"
+			BadValOnExport = "-99999"
+		/>
+		<Log
+			Name = "\Flash Disk\15SECTSU.LOG"
+			Size = "1200000"
+			Wrap = "true"
+			IgnoreQuality = "false"
+			AddHeaderOnExport = "true"
+			ReplaceBadValOnExport = "false"
+			BadValOnExport = "-99999"
+		/>
+	</LogList>
+	<SelfTest>
+		<Common
+			ExternalLoopback = "1"
+			CFCard = "0"
+			SDCard = "1"
+			USBCard = "1"
+			PowerConsumption = "1"
+			XliteButton = "1"
+			XliteIOHeader = "1"
+			Ethernet = "1"
+		/>
+	</SelfTest>
+	<ComsMgr>
+		<Com1
+			Disable = "1#41"
+			Connection = "1#41"
+			BaudRate = "115200#41"
+		/>
+		<Com2
+			BaudRate = "115200#41"
+		/>
+		<Com3
+			Disable = "1#41"
+			Connection = "4#41"
+			BaudRate = "115200#41"
+			RingToAnswer = "1#41"
+		/>
+		<Com4
+			Disable = "1#41"
+			Connection = "5#41"
+			BaudRate = "4800#41"
+		/>
+		<Com6
+			BaudRate = "115200#41"
+		/>
+		<Com7
+			BaudRate = "115200#41"
+		/>
+		<Com8
+			BaudRate = "115200#41"
+		/>
+		<Com9
+			BaudRate = "115200#41"
+		/>
+		<Tcpip
+		/>
+	</ComsMgr>
+	<Satlink>
+		<Common
+			Port = "0"
+			SatID = "00000000"
+			InitSatlink = "1"
+			LTO = "0"
+		/>
+		<SelfTimed
+			Enabled = "0"
+			LatLon = "0"
+			Quality = "0"
+			Channel = "151"
+			Type = "0"
+			Format = "0"
+			Time = "00:00:00"
+			Rate = "04:00:00"
+			CenterWin = "0"
+			WinLen = "00:01:00"
+			NumVals = "8"
+			EnableSatID2 = "0"
+			SatID2 = "00000000"
+			SCDChannel = "1"
+		/>
+		<Random
+			Enabled = "0"
+			LatLon = "0"
+			Quality = "0"
+			Channel = "151"
+			NormRate = "12:00:00"
+			AlarmRate = "01:00:00"
+			Type = "0"
+			BurstCount = "3"
+			BurstRate = "00:01:00"
+			Format = "0"
+			NumVals = "1"
+		/>
+	</Satlink>
+	<BasicMgr>
+		<Settings
+			GoesRandomFunction = "&lt;None&gt;#36"
+			RunAlways = "0#9"
+			GoesSelfTimedFunction = "&lt;None&gt;#36"
+		/>
+	</BasicMgr>
+</SetupFile>

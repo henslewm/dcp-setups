@@ -1,0 +1,55 @@
+Station Number: 9411406
+Storage Card Backup is Enabled
+
+
+DCP1:
+    DCP1 GOES Information
+    Plat ID: 334E3696
+    Channel: 72
+    TX Time: 00:04:12
+    TX Window: 00:00:06
+    TX Rate: 00:06:00
+
+    N1  %  PAROS1  (DCP1)
+    D1  4  Air Temperature  (DCP1)
+    F1  6  Barometer  (DCP1)
+    L1  <  Primary Battery Voltage  (DCP1)
+    N1  %  PAROS2  (DCP2)
+    L1  <  Backup Battery Voltage  (DCP2)
+
+    COM1    No Selection (Direct/115200)
+    COM2    Satlink (None/115200)
+    COM3    Phone Modem (Voice/115200/+5VDC)
+    COM4    Connection to Backup DCP (SSP/4800)
+    COM6    Paros (None/9600/+12VDC)
+    COM7    No Selection (None/115200)
+    COM8    No Selection (None/115200)
+    COM9    No Selection (None/115200)
+
+    Sensor Offset C1 (m): 0.000
+    Datum Offset C2 (m): 0.000
+    Barometer on Primary Offset: 0.0
+
+DCP2:
+    DCP2 GOES Information
+    Plat ID: 3343006A
+    Channel: 52
+    TX Time: 00:34:12
+    TX Window: 00:00:10
+    TX Rate: 01:00:00
+
+    N1  %  PAROS2  (DCP2)
+    L1  <  Backup Battery Voltage  (DCP2)
+
+    COM1    No Selection (Direct/115200)
+    COM2    Satlink (None/115200)
+    COM3    Phone Modem (Voice/115200/+5VDC)
+    COM4    Connection to Primary DCP (SSP/4800)
+    COM6    Paros (None/9600/+12VDC)
+    COM7    No Selection (None/115200)
+    COM8    No Selection (None/115200)
+    COM9    No Selection (None/115200)
+
+    Backup Sensor Offset C1 (m): 0.000
+    Backup Datum Offset C2 (m): 0.000
+

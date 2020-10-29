@@ -1,0 +1,120 @@
+<SetupFile>
+	<Engine>
+		<Settings
+			Version = "3.12.0.11"
+		/>
+	</Engine>
+	<ModuleList>
+	</ModuleList>
+	<LogList>
+		<Log
+			Name = "\Flash Disk\system.log"
+			Size = "2097152"
+			Wrap = "true"
+			IgnoreQuality = "false"
+			AddHeaderOnExport = "true"
+			ReplaceBadValOnExport = "false"
+			BadValOnExport = "-99999"
+			RecordIDBeforeDate = "false"
+			IncludeFieldHeader = "true"
+			IncludeUnitsHeader = "false"
+		/>
+		<Log
+			Name = "\Flash Disk\ssp.log"
+			Size = "1048576"
+			Wrap = "true"
+			IgnoreQuality = "false"
+			AddHeaderOnExport = "true"
+			ReplaceBadValOnExport = "false"
+			BadValOnExport = "-99999"
+			RecordIDBeforeDate = "false"
+			IncludeFieldHeader = "true"
+			IncludeUnitsHeader = "false"
+		/>
+	</LogList>
+	<SelfTest>
+		<Common
+			ExternalLoopback = "1"
+			CFCard = "0"
+			SDCard = "1"
+			USBCard = "1"
+			PowerConsumption = "1"
+			XliteButton = "1"
+			XliteIOHeader = "1"
+			Ethernet = "1"
+		/>
+	</SelfTest>
+	<Satlink>
+		<Common
+			Port = "0"
+			SatID = "FFFFFFFF"
+			InitSatlink = "1"
+			LTO = "0"
+			Antenna = "YAGI (10-11db)"
+		/>
+		<SelfTimed
+			Enabled = "0"
+			LatLon = "0"
+			Quality = "0"
+			Channel = "151"
+			Type = "GOES 300"
+			Format = "SHEF"
+			Time = "00:00:00"
+			Rate = "01:00:00"
+			CenterWin = "1"
+			WinLen = "00:00:10"
+			NumVals = "8"
+			EnableSatID2 = "0"
+			SatID2 = "FFFFFFFF"
+			SCDChannel = "1"
+		/>
+		<Random
+			Enabled = "0"
+			LatLon = "0"
+			Quality = "0"
+			Channel = "151"
+			NormRate = "12:00:00"
+			AlarmRate = "01:00:00"
+			Type = "GOES 300"
+			BurstCount = "3"
+			BurstRate = "00:01:00"
+			Format = "0"
+			NumVals = "1"
+		/>
+	</Satlink>
+	<BasicMgr>
+		<Settings
+			GPRSSelfTimedFunction = "&lt;None&gt;#36"
+			IridiumForcedFunction = "&lt;None&gt;#36"
+			GPRSForcedFunction = "&lt;None&gt;#36"
+			GPRSAlarmFunction = "&lt;None&gt;#36"
+			IridiumSelfTimedFunction = "&lt;None&gt;#36"
+			IridiumAlarmFunction = "&lt;None&gt;#36"
+			GoesRandomFunction = "&lt;None&gt;#36"
+			RunAlways = "0#9"
+			GoesSelfTimedFunction = "&lt;None&gt;#36"
+		/>
+	</BasicMgr>
+	<ComsMgr>
+		<Com1
+			Disable = "1#9"
+			Connection = "1#9"
+		/>
+		<Com2
+		/>
+		<Com3
+		/>
+		<Com4
+		/>
+		<Com6
+		/>
+		<Com7
+		/>
+		<Com8
+		/>
+		<Com9
+		/>
+		<Tcpip
+		/>
+	</ComsMgr>
+</SetupFile>

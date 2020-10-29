@@ -1,0 +1,121 @@
+SDI-12
+5     GND             "None"
+6     +12V            "None"
+7     DATA            "None"
+8     GND             "Black Waterlog Gas Purge"
+9     +12V            "Red Waterlog Gas Purge"
+10    DATA            "White Waterlog Gas Purge"
+
+
+ANALOG 1
+1     GND             "None"
+2     Channel 1       "DRUK Yellow"
+3     GND             "None"
+4     Channel 2       "DRUK Blue"
+5     GND             "None"
+6     Channel 3       "DRUK RedWindbird White"
+7     GND             "None"
+8     Channel 4       "Windbird Green"
+9     GND             "Windbird Black"
+10    Channel 5       "None"
+11    Channel 6       "None"
+12    Aux             "None"
+13    -V              "DRUK White"
+14    RM              "None"
+15    GND             "None"
+16    GND             "None"
+17    SwBat           "None"
+18    Battery         "None"
+
+
+DIGITAL 1
+1     GND             "None"
+2     Channel 1       "None"
+3     GND             "None"
+4     Channel 2       "None"
+5     GND             "None"
+6     Channel 3       "None"
+7     GND             "None"
+8     Channel 4       "None"
+9     GND             "None"
+10    Channel 5       "None"
+11    GND             "None"
+12    Channel 6       "None"
+13    GND             "None"
+14    Channel 7       "Windbird Red"
+15    GND             "None"
+16    Channel 8       "None"
+17    GND             "None"
+18    Battery         "None"
+
+
+COM2
+None
+1     J3 SEL          "None"
+2     RXD             "None"
+3     TXD SEL         "None"
+4     J4 SEL          "None"
+5     GND             "None"
+6     POWER OUT       "None"
+
+
+COM3
+None
+1     J3 SEL          "None"
+2     RXD             "None"
+3     TXD SEL         "None"
+4     J4 SEL          "None"
+5     GND             "None"
+6     POWER OUT       "None"
+
+
+COM4
+To Primary Unit
+1     J3 SEL          "To Primary Unit COM4 Black"
+2     RXD             "To Primary Unit COM4 Red"
+3     TXD SEL         "To Primary Unit COM4 White"
+4     J4 SEL          "To Primary Unit COM4 Green"
+5     GND             "To Primary Unit COM4 Sheild"
+6     POWER OUT       "None"
+
+
+COM6
+None
+1     J3 SEL          "None"
+2     RXD             "None"
+3     TXD SEL         "None"
+4     J4 SEL          "None"
+5     GND             "None"
+6     POWER OUT       "None"
+
+
+COM7
+None
+1     J3 SEL          "None"
+2     RXD             "None"
+3     TXD SEL         "None"
+4     J4 SEL          "None"
+5     GND             "None"
+6     POWER OUT       "None"
+
+
+COM8
+None
+1     J3 SEL          "None"
+2     RXD             "None"
+3     TXD SEL         "None"
+4     J4 SEL          "None"
+5     GND             "None"
+6     POWER OUT       "None"
+
+
+COM9
+None
+1     J3 SEL          "None"
+2     RXD             "None"
+3     TXD SEL         "None"
+4     J4 SEL          "None"
+5     GND             "None"
+6     POWER OUT       "None"
+
+

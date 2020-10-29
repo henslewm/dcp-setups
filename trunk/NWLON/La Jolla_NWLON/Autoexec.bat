@@ -1,0 +1,2 @@
+\Windows\remote.exe COM1:115200 VOICE3:115200 SSP4:4800,10.0,3,30.0,1.0 COM7:115200 COM8:115200 /T PCBASE
+\windows\xpert.exe

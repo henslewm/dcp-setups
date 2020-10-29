@@ -1,0 +1,182 @@
+SDI-12
+5     GND             "BLACK and Green Design Analysis H-3611"
+6     +12V            "RED Design Analysis H-3611"
+7     DATA            "WHITE Design Analysis H-3611"
+8     GND             "None"
+9     +12V            "None"
+10    DATA            "None"
+
+
+ANALOG 1
+1     GND             "None"
+2     Channel 1       "None"
+3     GND             "None"
+4     Channel 2       "None"
+5     GND             "Air Temperature Black"
+6     Channel 3       "Air Temperature White"
+7     GND             "Water Temperature Black"
+8     Channel 4       "Water Temperature White"
+9     GND             "None"
+10    Channel 5       "None"
+11    Channel 6       "None"
+12    Aux             "None"
+13    -V              "None"
+14    RM              "None"
+15    GND             "None"
+16    GND             "None"
+17    SwBat           "None"
+18    Battery         "None"
+
+
+ANALOG 2
+1     GND             "Windbird Black"
+2     Channel 1       "Windbird Green"
+3     GND             "None"
+4     Channel 2       "Windbird White"
+5     GND             "None"
+6     Channel 3       "None"
+7     GND             "None"
+8     Channel 4       "None"
+9     GND             "None"
+10    Channel 5       "None"
+11    Channel 6       "None"
+12    Aux             "None"
+13    -V              "None"
+14    RM              "None"
+15    GND             "None"
+16    GND             "None"
+17    SwBat           "None"
+18    Battery         "None"
+
+
+DIGITAL 1
+1     GND             "None"
+2     Channel 1       "None"
+3     GND             "None"
+4     Channel 2       "None"
+5     GND             "None"
+6     Channel 3       "None"
+7     GND             "None"
+8     Channel 4       "None"
+9     GND             "None"
+10    Channel 5       "None"
+11    GND             "None"
+12    Channel 6       "None"
+13    GND             "None"
+14    Channel 7       "Windbird Red"
+15    GND             "None"
+16    Channel 8       "None"
+17    GND             "None"
+18    Battery         "None"
+
+
+COM1
+Direct
+
+
+COM2
+Satlink
+
+
+COM3
+None
+1     J3 SEL          "None"
+2     RXD             "None"
+3     TXD SEL         "None"
+4     J4 SEL          "None"
+5     GND             "None"
+6     POWER OUT       "None"
+
+
+COM4
+To Backup Unit
+1     J3 SEL          "To Backup Unit COM4 Green"
+2     RXD             "To Backup Unit COM4 White"
+3     TXD SEL         "To Backup Unit COM4 Red"
+4     J4 SEL          "To Backup Unit COM4 Black"
+5     GND             "To Backup Unit COM4 Sheild"
+6     POWER OUT       "None"
+
+
+COM6
+None
+1     J3 SEL          "None"
+2     RXD             "None"
+3     TXD SEL         "None"
+4     J4 SEL          "None"
+5     GND             "None"
+6     POWER OUT       "None"
+
+
+COM7
+None
+1     J3 SEL          "None"
+2     RXD             "None"
+3     TXD SEL         "None"
+4     J4 SEL          "None"
+5     GND             "None"
+6     POWER OUT       "None"
+
+
+COM8
+None
+1     J3 SEL          "None"
+2     RXD             "None"
+3     TXD SEL         "None"
+4     J4 SEL          "None"
+5     GND             "None"
+6     POWER OUT       "None"
+
+
+COM9
+None
+1     J3 SEL          "None"
+2     RXD             "None"
+3     TXD SEL         "None"
+4     J4 SEL          "None"
+5     GND             "None"
+6     POWER OUT       "None"
+
+
+
+
+
+REFERENCES
+
+
+NOS G3 Main Station:
+    4.2.1.1 (A) Data Collection Platforms/(A1) Xpert/Xpert Dark I&A Checklist
+    (I20) Engineering Bulletin 10-003 Upgrade Xpert2, Xpert2 Dark, and 9210B Data Loggers to v3.4.0.6 During Annual Inspections
+    (I20-1) Engineering Bulletin 10-004 Xpert2 v3.4.0.6 Firmware Upgrade
+    (I18) Engineering Bulletin 09-006 Upgrade Satlink-1 and Satlink-2 to 6.40 During Annual Inspections
+    (I18-1) SOP for Satlink 6.40 Upgrade
+    (I22) Engineering Bulletin 11-002 GOES Battery Flag Standardization
+    (I23) Engineering Bulletin 11-003 CO-OPS SDI-12 Addresses Update
+    (I24) Engineering Bulletin 12-001 Replace Xpert IO Modules That Have Firmware Below v2.01%20(1).pdf
+    (I15) Engineering Bulletin 09-003 Update to Xpert Log File Sizes 
+    4.2.1.5 (E) Supplemental/(E5) Solar Panel I&A Checklist
+    4.2.1.5 (E) Supplemental/(E6) GOES Antenna I&A Checklist
+    (I19) Engineering Bulletin 10-002 Standardize Battery Type for CO-OPS Water Level and Meteorological Stations with Photovoltaic Charging Systems
+    4.2.1.5 (E) Supplemental/(E7) Power Sonic PS-12400 Battery I&A Checklist
+    (I10) Engineering Bulletin 07-007 Exporting Data from Xpert Family DCP
+    (I6) Engineering Bulletin 07-002 Adding a Login to Xperts for DPAS Data Recovery 
+
+RM Young Windbird (Model 05103):
+    4.2.1.3 (C) Sensors/(C9) RM Young Windbird (Model 05103) I&A Checklist
+    5.4.1.4(B) Wind Sensor Alignment Procedure for R. M. Young Wind Monitor, updated 10/2005
+    5.4.1.5(P) Procedure to Establish a Meteorological Sensor Reference Mark and to Measure Meteorological Sensor Heights (7/2012)
+
+Air Temperature:
+    4.2.1.3 (C) Sensors/(C12) YSI Air Temperature Probe I&A Checklist
+    4.3.1.1 (A) NOAA/NOS/CO-OPS Configuration and Standards/(A19) YSI Air Temperature Probes
+    5.4.1.5(P) Procedure to Establish a Meteorological Sensor Reference Mark and to Measure Meteorological Sensor Heights (7/2012)
+
+Water Temperature:
+    4.2.1.3 (C) Sensors/(C17) Water Temperature Probe I&A Checklist 
+    5.4.1.5(P) Procedure to Establish a Meteorological Sensor Reference Mark and to Measure Meteorological Sensor Heights (7/2012)
+    (I13) Engineering Bulletin 09-001 Create Water Temperature Sensor Replacement Cycle
+
+Throughput Testing
+    4.4.1 CO-OPS Water Level & Meteorological Station Throughput Testing
+	   4.4.1.2 Water Level Station Xpert Site Report
+    4.4.1.4 NOS/CO-OPS Diagtool

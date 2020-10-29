@@ -1,0 +1,45 @@
+============================================================
+Deployment   : iATON
+Current time : 12/31/2015 3:14:30 PM
+Start at     : 12/31/2015 3:14:00 PM
+Comment:
+Bench System
+
+------------------------------------------------------------
+Profile interval      (s) : 360
+Number of cells           : 20
+Cell size             (m) : 1.00
+Blanking distance     (m) : 0.40
+Measurement load      (%) : 13
+Average interval      (s) : 300
+Power level               : HIGH
+Wave data collection      : DISABLED
+Compass upd. rate     (s) : 1
+Coordinate System         : ENU
+Speed of sound      (m/s) : MEASURED
+Salinity            (ppt) : 35
+Analog input 1            : PROFILE
+Analog input 2            : PROFILE
+Analog input power out    : ENABLED
+File wrapping             : ON
+TellTale                  : OFF
+Acoustic modem            : OFF
+Serial output             : ON
+Baud rate                 : 9600
+------------------------------------------------------------
+Assumed duration   (days) : 30.0
+Battery utilization   (%) : 303.0
+Battery level         (V) : 15.8
+Recorder size        (MB) : 9
+Recorder free space  (MB) : 8.725
+Memory required      (MB) : 1.5
+Vertical vel. prec (cm/s) : 0.6
+Horizon. vel. prec (cm/s) : 1.7
+------------------------------------------------------------
+Instrument ID             : AQD 5268
+Head ID                   : AQP 3780
+Firmware version          : 3.38
+------------------------------------------------------------
+AquaPro Version 1.37.04
+Copyright (C) Nortek AS
+============================================================

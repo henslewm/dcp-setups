@@ -1,0 +1,6 @@
+Sequence #,Description, DPAS Code, Flag, log label, #ST, #RR, Format, Aux1, Aux2, Aux3, Aux4/Header=P
+1,PAROS1,N1,%,PARO1,1,3,TMSO3,P1STD,P1OUT
+2,Windbird,C1,3,PWS,1,3,WSWDG,PWD,PWG
+3,Barometer,F1,6,BP,1,3,BAROM
+4,BAT,L1,<,BAT,1,3,SV
+5,PAROS2,T1,&,PARO2,1,3,MSO3,P2STD,P2OUT

@@ -1,0 +1,44 @@
+============================================================
+Deployment   : 16Bins
+Current time : 4/26/2017 5:07:31 PM
+Start at     : 4/26/2017 5:07:00 PM
+Comment:
+
+------------------------------------------------------------
+Profile interval      (s) : 360
+Number of cells           : 16
+Cell size             (m) : 1.00
+Blanking distance     (m) : 0.41
+Measurement load      (%) : 13
+Average interval      (s) : 300
+Power level               : HIGH
+Wave data collection      : DISABLED
+Compass upd. rate     (s) : 1
+Coordinate System         : ENU
+Speed of sound      (m/s) : MEASURED
+Salinity            (ppt) : 35
+Analog input 1            : PROFILE
+Analog input 2            : PROFILE
+Analog input power out    : ENABLED
+File wrapping             : ON
+TellTale                  : OFF
+Acoustic modem            : OFF
+Serial output             : ON
+Baud rate                 : 9600
+------------------------------------------------------------
+Assumed duration   (days) : 30.0
+Battery utilization   (%) : 295.0
+Battery level         (V) : 11.5
+Recorder size        (MB) : 161
+Recorder free space  (MB) : 160.962
+Memory required      (MB) : 1.2
+Vertical vel. prec (cm/s) : 0.6
+Horizon. vel. prec (cm/s) : 1.7
+------------------------------------------------------------
+Instrument ID             : AQD 3174
+Head ID                   : AQP 0317
+Firmware version          : 1.17
+------------------------------------------------------------
+AquaPro Version 1.37.04
+Copyright (C) Nortek AS
+============================================================

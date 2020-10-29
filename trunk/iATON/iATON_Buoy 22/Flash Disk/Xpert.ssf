@@ -1,0 +1,103 @@
+<SetupFile>
+	<Engine>
+		<Settings
+			Version = "3.1.0.4"
+		/>
+	</Engine>
+	<ModuleList>
+	</ModuleList>
+	<LogList>
+		<Log
+			Name = "\Flash Disk\system.log"
+			Size = "2097152"
+			Wrap = "true"
+			IgnoreQuality = "false"
+			AddHeaderOnExport = "true"
+			ReplaceBadValOnExport = "false"
+			BadValOnExport = "-99999"
+		/>
+		<Log
+			Name = "\Flash Disk\ssp.log"
+			Size = "1048576"
+			Wrap = "true"
+			IgnoreQuality = "false"
+			AddHeaderOnExport = "true"
+			ReplaceBadValOnExport = "false"
+			BadValOnExport = "-99999"
+		/>
+	</LogList>
+	<SelfTest>
+		<Common
+			ExternalLoopback = "1"
+			CFCard = "0"
+			SDCard = "1"
+			USBCard = "1"
+			PowerConsumption = "1"
+			XliteButton = "0"
+			XliteIOHeader = "1"
+			Ethernet = "1"
+		/>
+	</SelfTest>
+	<ComsMgr>
+		<Com1
+			Disable = "1#9"
+			Connection = "1#9"
+		/>
+		<Com2
+		/>
+		<Com3
+		/>
+		<Com4
+		/>
+		<Com6
+		/>
+		<Com7
+		/>
+		<Com8
+		/>
+		<Com9
+		/>
+	</ComsMgr>
+	<Satlink>
+		<Common
+			Port = "0"
+			SatID = "00000000"
+			InitSatlink = "1"
+			LTO = "0"
+		/>
+		<SelfTimed
+			Enabled = "0"
+			LatLon = "0"
+			Quality = "0"
+			Channel = "151"
+			Type = "0"
+			Format = "0"
+			Time = "00:00:00"
+			Rate = "04:00:00"
+			CenterWin = "0"
+			WinLen = "00:01:00"
+			NumVals = "8"
+			EnableSatID2 = "0"
+			SatID2 = "00000000"
+			SCDChannel = "1"
+		/>
+		<Random
+			Enabled = "0"
+			LatLon = "0"
+			Quality = "0"
+			Channel = "151"
+			NormRate = "12:00:00"
+			AlarmRate = "01:00:00"
+			Type = "0"
+			BurstCount = "3"
+			BurstRate = "00:01:00"
+			Format = "0"
+			NumVals = "1"
+		/>
+	</Satlink>
+	<BasicMgr>
+		<Settings
+			GoesSelfTimedFunction = "&lt;None&gt;#36"
+		/>
+	</BasicMgr>
+</SetupFile>

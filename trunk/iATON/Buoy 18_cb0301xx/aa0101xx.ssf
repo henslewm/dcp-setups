@@ -1,0 +1,310 @@
+<SetupFile>
+	<Engine>
+		<Settings
+			Version = "3.13.0.15"
+		/>
+	</Engine>
+	<ModuleList>
+		<Module
+			Name = "AqdpPrf"
+			Function = "AqdpPrf#36"
+			Index = "0#9"
+		/>
+		<Module
+			Name = "Measure"
+			Function = "Measure#36"
+			Interval = "00:00:03#36"
+			Input2 = "0,2#36"
+			Index = "1#9"
+			Time = "00:00:00#36"
+		/>
+		<Module
+			Name = "IntBat"
+			Function = "IntBat#36"
+			TempUnits = "0#44"
+			TempOnly = "0#41"
+			CalOffset = "0#50"
+			Index = "2#9"
+		/>
+		<Module
+			Name = "Measure"
+			Function = "Measure#36"
+			Interval = "00:06:00#36"
+			Input2 = "2,1#36"
+			Index = "3#9"
+			Time = "00:00:00#36"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			Function = "Log#36"
+			EventDriven = "0#36"
+			LogFile = "\Flash Disk\ssp.log#36"
+			SensorName = "BAT#36"
+			Precision = "1#41"
+			Input2 = "3,2#36"
+			UseScheduledTime = "1#41"
+			Index = "4#9"
+			UsePrecision = "1#41"
+		/>
+		<Module
+			Name = "SelfTimed"
+			Offset = "00:00:00#36"
+			Function = "SelfTimed#36"
+			Interval = "00:06:00#36"
+			Sequence = "1#41"
+			Input2 = "4,2#36"
+			UseCalcTime = "0#41"
+			Index = "5#9"
+			NumVals = "1#41"
+			Label = "BAT#36"
+		/>
+		<Module
+			Name = "Const"
+			ReadOnly = "0#41"
+			Function = "DAT#36"
+			UseUnits = "0#41"
+			TestFlag = "0#41"
+			Units = "N/A#36"
+			Constant = "0#50"
+			Index = "6#9"
+		/>
+		<Module
+			Name = "Measure"
+			Function = "Measure#36"
+			Interval = "00:06:00#36"
+			Input2 = "6,2#36"
+			Index = "7#9"
+			Time = "00:00:00#36"
+		/>
+		<Module
+			Name = "SelfTimed"
+			Offset = "00:00:00#36"
+			Function = "SelfTimed#36"
+			Interval = "00:06:00#36"
+			Sequence = "1#41"
+			Input2 = "15,2#36"
+			UseCalcTime = "0#41"
+			Index = "8#9"
+			NumVals = "1#41"
+			Label = "DAT#36"
+		/>
+		<Module
+			Name = "Const"
+			ReadOnly = "0#41"
+			Function = "SNS#36"
+			UseUnits = "0#41"
+			TestFlag = "0#41"
+			Units = "N/A#36"
+			Constant = "0#50"
+			Index = "9#9"
+		/>
+		<Module
+			Name = "Measure"
+			Function = "Measure#36"
+			Interval = "00:06:00#36"
+			Input2 = "9,2#36"
+			Index = "10#9"
+			Time = "00:00:00#36"
+		/>
+		<Module
+			Name = "SelfTimed"
+			Offset = "00:00:00#36"
+			Function = "SelfTimed#36"
+			Interval = "00:06:00#36"
+			Sequence = "1#41"
+			Input2 = "14,2#36"
+			UseCalcTime = "0#41"
+			Index = "11#9"
+			NumVals = "1#41"
+			Label = "SNS#36"
+		/>
+		<Module
+			Name = "FieldVar"
+			Function = "SNS#36"
+			Input2 = "9,2#36"
+			Constant = "SNS#36"
+			ConstantDisplayName = "SNS#36"
+			Index = "12#9"
+		/>
+		<Module
+			Name = "FieldVar"
+			Function = "DAT#36"
+			Input2 = "6,2#36"
+			Constant = "DAT#36"
+			ConstantDisplayName = "DAT#36"
+			Index = "13#9"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			Function = "Log#36"
+			EventDriven = "0#41"
+			LogFile = "\Flash Disk\ssp.log#36"
+			SensorName = "SNS#36"
+			Precision = "3#41"
+			Input2 = "10,2#36"
+			UseScheduledTime = "1#41"
+			Index = "14#9"
+			UsePrecision = "1#41"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			Function = "Log#36"
+			EventDriven = "0#41"
+			LogFile = "\Flash Disk\ssp.log#36"
+			SensorName = "DAT#36"
+			Precision = "3#41"
+			Input2 = "7,2#36"
+			UseScheduledTime = "1#41"
+			Index = "15#9"
+			UsePrecision = "1#41"
+		/>
+	</ModuleList>
+	<LogList>
+		<Log
+			Name = "\Flash Disk\system.log"
+			Size = "65536"
+			Wrap = "true"
+			IgnoreQuality = "false"
+			AddHeaderOnExport = "true"
+			ReplaceBadValOnExport = "false"
+			BadValOnExport = "-99999"
+			RecordIDBeforeDate = "false"
+			IncludeFieldHeader = "true"
+			IncludeUnitsHeader = "false"
+		/>
+		<Log
+			Name = "\Flash Disk\ssp.log"
+			Size = "1200000"
+			Wrap = "true"
+			IgnoreQuality = "false"
+			AddHeaderOnExport = "true"
+			ReplaceBadValOnExport = "false"
+			BadValOnExport = "-99999"
+			RecordIDBeforeDate = "false"
+			IncludeFieldHeader = "true"
+			IncludeUnitsHeader = "false"
+		/>
+	</LogList>
+	<SelfTest>
+		<Common
+			ExternalLoopback = "1"
+			CFCard = "0"
+			SDCard = "1"
+			USBCard = "1"
+			PowerConsumption = "1"
+			XliteButton = "1"
+			XliteIOHeader = "1"
+			Ethernet = "1"
+		/>
+	</SelfTest>
+	<IridiumMgr>
+		<Iridium
+			PwrOnTime = "00:00:00#36"
+			AlarmData = "AllSensors#36"
+			TxFormat = "PseudoBin-C#36"
+			TxInterval = "00:06:00#36"
+			Port = "4#41"
+			TxTime = "00:01:50#36"
+			PwrOnDuration = "01:00:00#36"
+			MsgInterval = "00:00:00#36"
+			LocalTimeOffset = "0#41"
+			PwrOnInterval = "00:00:00#36"
+			SyncTime = "1#41"
+			DataPassword = "#36"
+			Enabled = "1#41"
+			IncludeHeader = "0#41"
+			SetupPassword = "#36"
+			NumVals = "4#41"
+		/>
+	</IridiumMgr>
+	<Satlink>
+		<Common
+			Port = "4"
+			SatID = "336FB396"
+			InitSatlink = "0"
+			LTO = "0"
+			Antenna = "YAGI (10-11db)"
+		/>
+		<SelfTimed
+			Enabled = "1"
+			LatLon = "0"
+			Quality = "0"
+			Channel = "52"
+			Type = "GOES 300"
+			Format = "NOS"
+			Time = "00:01:30"
+			Rate = "00:06:00"
+			CenterWin = "0"
+			WinLen = "00:00:06"
+			NumVals = "1"
+			EnableSatID2 = "0"
+			SatID2 = "00000000"
+			SCDChannel = "1"
+		/>
+		<Random
+			Enabled = "0"
+			LatLon = "0"
+			Quality = "0"
+			Channel = "151"
+			NormRate = "12:00:00"
+			AlarmRate = "01:00:00"
+			Type = "CGMS 100 INTL"
+			BurstCount = "3"
+			BurstRate = "00:01:00"
+			Format = "0"
+			NumVals = "1"
+		/>
+	</Satlink>
+	<BasicMgr>
+		<Settings
+			GPRSSelfTimedFunction = "&lt;None&gt;#36"
+			IridiumForcedFunction = "&lt;None&gt;#36"
+			GPRSForcedFunction = "&lt;None&gt;#36"
+			GPRSAlarmFunction = "&lt;None&gt;#36"
+			IridiumSelfTimedFunction = "STFORMATTER#36"
+			IridiumAlarmFunction = "&lt;None&gt;#36"
+			GoesRandomFunction = "&lt;None&gt;#36"
+			RunAlways = "1#9"
+			GoesSelfTimedFunction = "&lt;None&gt;#36"
+		/>
+		<Schedule
+			Subroutine = "TURNRELAYS_ON#36"
+			Interval = "24:00:00#36"
+			Time = "17:01:00#36"
+		/>
+		<Schedule
+			Subroutine = "TURNRELAYS_OFF#36"
+			Interval = "00:30:00#36"
+			Time = "00:00:00#36"
+		/>
+	</BasicMgr>
+	<ComsMgr>
+		<Com1
+			Disable = "1#9"
+			Connection = "1#9"
+		/>
+		<Com2
+		/>
+		<Com3
+			BaudRate = "9600#36"
+		/>
+		<Com4
+			BaudRate = "19200#36"
+		/>
+		<Com6
+		/>
+		<Com7
+		/>
+		<Com8
+		/>
+		<Com9
+			Disable = "0#9"
+			Connection = "1#9"
+		/>
+		<Tcpip
+		/>
+	</ComsMgr>
+</SetupFile>

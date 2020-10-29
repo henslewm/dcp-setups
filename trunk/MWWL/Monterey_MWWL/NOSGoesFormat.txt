@@ -1,0 +1,3 @@
+Sequence #,Description, DPAS Code, Flag, log label, #ST, #RR, Format, Aux1, Aux2, Aux3, Aux4/HEADER=P
+1,MWWL,Y1,8,MWWL,10,3,TMSO3,MWSTD,MWOUT
+2,BAT,L1,<,BAT,1,3,SV

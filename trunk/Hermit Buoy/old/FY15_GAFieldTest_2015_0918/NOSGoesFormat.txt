@@ -1,0 +1,8 @@
+Sequence #,Description, DPAS Code, Flag, log label, #ST, #RR, Format, Aux1, Aux2, Aux3, Aux4/Header=N
+1,SeaBird WL,B1,2,PAROS1,10,3,TM,P1STD,P1OUT
+2,AirMarWind,C1,3,AMWS,10,3,WSWDG,AMWD,AMWG
+3,Air Temp,D1,4,AMAT,10,3,SVS
+4,Water Temp,E1,5,WT,10,3,SVS
+5,Baro,F1,6,AMBP,10,3,BAROM
+6,Conductivity,G1,7,COND,10,3,SVS
+7,BAT,L1,<,BAT,1,3,SV

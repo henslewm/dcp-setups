@@ -1,0 +1,921 @@
+<SetupFile>
+	<Engine>
+		<Settings
+			Version = "2.8.0.3"
+		/>
+	</Engine>
+	<ModuleList>
+		<Module
+			Name = "RS232"
+			EOLinIndex = "0#41"
+			EOLin = "1#41"
+			PromptLength = "0#41"
+			LogFile = "\Flash Disk\GPLog.txt#36"
+			ParseOn = "0#41"
+			FlowControl = "0#41"
+			GetDataCmd = "0100p3#36"
+			InitStr1 = "9900ID#36"
+			TimeoutCount = "12#41"
+			DataBits = "0#41"
+			NumValues = "0#41"
+			InitStr2 = "0100EW*0100UN=0#36"
+			ComPortStr = "COM6:#36"
+			InitStr3 = "0100EW*0100PR=980#36"
+			Function = "PAROS1#36"
+			InitStr4 = "0100EW*0100UF=0.6894757#36"
+			ComPort = "5#41"
+			EOLout = "1#41"
+			InitStr5 = "0100EW*0100DP=4#36"
+			SendBreak = "0#41"
+			SkipEcho = "0#41"
+			LeadChar = "3#41"
+			StopBits = "0#41"
+			SkipFirst = "5#41"
+			Parity = "0#41"
+			NumLogEntries = "100#41"
+			SeparateFiles = "1#41"
+			Index = "0#9"
+			EnableLog = "0#41"
+			BPSRate = "6#41"
+			ExpectChars = "0#41"
+		/>
+		<Module
+			Name = "NOSDQAP"
+			HowOften = "00:00:05:000#36"
+			Duration = "00:03:05#36"
+			Function = "NOSDQAP#36"
+			CenterTimestamp = "0#41"
+			Interval = "00:06:00#36"
+			Input2 = "5,2#36"
+			Time = "00:58:30#36"
+			Index = "1#9"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Flash Disk\SSP.LOG#36"
+			Precision = "3#41"
+			Function = "MEAN#36"
+			Input2 = "1,0#36"
+			SensorName = "PARO1#36"
+			EventDriven = "0#41"
+			Index = "2#9"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Flash Disk\SSP.LOG#36"
+			Precision = "3#41"
+			Function = "STD#36"
+			Input2 = "1,1#36"
+			SensorName = "P1STD#36"
+			EventDriven = "0#41"
+			Index = "3#9"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Flash Disk\SSP.LOG#36"
+			Precision = "0#41"
+			Function = "OUT#36"
+			Input2 = "1,4#36"
+			SensorName = "P1OUT#36"
+			EventDriven = "0#41"
+			Index = "4#9"
+		/>
+		<Module
+			Name = "Measure"
+			Function = "Measure#36"
+			Interval = "00:00:05#36"
+			Input2 = "0,0#36"
+			Time = "00:00:00#36"
+			Index = "5#9"
+		/>
+		<Module
+			Name = "Average"
+			HowOften = "00:00:05:000#36"
+			Duration = "00:01:00#36"
+			Function = "Average#36"
+			Interval = "00:01:00#36"
+			Input2 = "5,2#36"
+			Time = "00:00:00#36"
+			Index = "6#9"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Flash Disk\TSU1MIN.LOG#36"
+			Precision = "3#41"
+			Function = "TWL#36"
+			Input2 = "6,2#36"
+			SensorName = "TWL#36"
+			EventDriven = "0#41"
+			Index = "7#9"
+		/>
+		<Module
+			Name = "SelfTimed"
+			Offset = "00:01:30#36"
+			Function = "SelfTimed#36"
+			Interval = "00:06:00#36"
+			Input2 = "2,2#36"
+			Sequence = "1#41"
+			UseCalcTime = "0#41"
+			NumVals = "8#41"
+			Index = "8#9"
+			Label = "PARO1#36"
+		/>
+		<Module
+			Name = "SelfTimed"
+			Offset = "00:01:30#36"
+			Function = "SelfTimed#36"
+			Interval = "00:06:00#36"
+			Input2 = "3,2#36"
+			Sequence = "2#41"
+			UseCalcTime = "0#41"
+			NumVals = "8#41"
+			Index = "9#9"
+			Label = "P1STD#36"
+		/>
+		<Module
+			Name = "SelfTimed"
+			Offset = "00:01:30#36"
+			Function = "SelfTimed#36"
+			Interval = "00:06:00#36"
+			Input2 = "4,2#36"
+			Sequence = "3#41"
+			UseCalcTime = "0#41"
+			NumVals = "8#41"
+			Index = "10#9"
+			Label = "P1OUT#36"
+		/>
+		<Module
+			Name = "SelfTimed"
+			Offset = "00:00:55#36"
+			Function = "SelfTimed#36"
+			Interval = "00:01:00#36"
+			Input2 = "7,2#36"
+			Sequence = "4#41"
+			UseCalcTime = "0#41"
+			NumVals = "10#41"
+			Index = "11#9"
+			Label = "TWL#36"
+		/>
+		<Module
+			Name = "Const"
+			Constant = "0#50"
+			Function = "DAT#36"
+			Units = "N/A#36"
+			UseUnits = "0#41"
+			TestFlag = "0#41"
+			Index = "12#9"
+		/>
+		<Module
+			Name = "Measure"
+			Function = "Measure#36"
+			Interval = "00:06:00#36"
+			Input2 = "12,2#36"
+			Time = "00:00:00#36"
+			Index = "13#9"
+		/>
+		<Module
+			Name = "SelfTimed"
+			Offset = "00:00:00#36"
+			Function = "SelfTimed#36"
+			Interval = "00:06:00#36"
+			Input2 = "20,2#36"
+			Sequence = "1#41"
+			UseCalcTime = "0#41"
+			NumVals = "1#41"
+			Index = "14#9"
+			Label = "DAT#36"
+		/>
+		<Module
+			Name = "Const"
+			Constant = "0#50"
+			Function = "SNS#36"
+			Units = "N/A#36"
+			UseUnits = "0#41"
+			TestFlag = "0#41"
+			Index = "15#9"
+		/>
+		<Module
+			Name = "Measure"
+			Function = "Measure#36"
+			Interval = "00:06:00#36"
+			Input2 = "15,2#36"
+			Time = "00:00:00#36"
+			Index = "16#9"
+		/>
+		<Module
+			Name = "SelfTimed"
+			Offset = "00:00:00#36"
+			Function = "SelfTimed#36"
+			Interval = "00:06:00#36"
+			Input2 = "21,2#36"
+			Sequence = "1#41"
+			UseCalcTime = "0#41"
+			NumVals = "1#41"
+			Index = "17#9"
+			Label = "SNS#36"
+		/>
+		<Module
+			Name = "FieldVar"
+			Constant = "SNS#36"
+			Function = "FieldVar#36"
+			Input2 = "15,2#36"
+			Index = "18#9"
+			ConstantDisplayName = "SNS#36#36#36#36"
+		/>
+		<Module
+			Name = "FieldVar"
+			Constant = "DAT#36"
+			Function = "FieldVar#36"
+			Input2 = "12,2#36"
+			Index = "19#9"
+			ConstantDisplayName = "DAT#36#36#36#36"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Flash Disk\SSP.LOG#36"
+			Precision = "3#41"
+			Function = "Log#36"
+			Input2 = "13,2#36"
+			SensorName = "DAT#36"
+			EventDriven = "0#41"
+			Index = "20#9"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Flash Disk\SSP.LOG#36"
+			Precision = "3#41"
+			Function = "Log#36"
+			Input2 = "16,2#36"
+			SensorName = "SNS#36"
+			EventDriven = "0#41"
+			Index = "21#9"
+		/>
+		<Module
+			Name = "IntBat"
+			Function = "IntBat#36"
+			TempUnits = "0#41"
+			Index = "22#9"
+		/>
+		<Module
+			Name = "Measure"
+			Function = "Measure#36"
+			Interval = "00:06:00#36"
+			Input2 = "22,1#36"
+			Time = "00:00:00#36"
+			Index = "23#9"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Flash Disk\SSP.LOG#36"
+			Precision = "1#41"
+			Function = "Log#36"
+			Input2 = "23,2#36"
+			SensorName = "BAT#36"
+			EventDriven = "0#41"
+			Index = "24#9"
+		/>
+		<Module
+			Name = "SelfTimed"
+			Offset = "00:00:00#36"
+			Function = "SelfTimed#36"
+			Interval = "00:06:00#36"
+			Input2 = "24,2#36"
+			Sequence = "8#41"
+			UseCalcTime = "0#41"
+			NumVals = "1#41"
+			Index = "25#9"
+			Label = "BAT#36"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Flash Disk\SSP.LOG#36"
+			Precision = "1#41"
+			Function = "Log#36"
+			Input2 = "27,2#36"
+			SensorName = "BP#36"
+			EventDriven = "0#41"
+			Index = "26#9"
+		/>
+		<Module
+			Name = "Average"
+			HowOften = "00:00:06:000#36"
+			Duration = "00:02:06#36"
+			Function = "Average#36"
+			Interval = "00:06:00#36"
+			Input2 = "29,0#36"
+			Time = "00:05:00#36"
+			Index = "27#9"
+		/>
+		<Module
+			Name = "SelfTimed"
+			Offset = "00:01:00#36"
+			Function = "SelfTimed#36"
+			Interval = "00:06:00#36"
+			Input2 = "26,2#36"
+			Sequence = "1#41"
+			UseCalcTime = "0#41"
+			NumVals = "10#41"
+			Index = "28#9"
+			Label = "BP#36"
+		/>
+		<Module
+			Name = "SDI-12"
+			Offset = "-2.69#50"
+			Command = "M#36"
+			Slope = "1#50"
+			Function = "BARO#36"
+			Units = "mb#36"
+			AddressIdx = "5#41"
+			Index = "29#9"
+		/>
+		<Module
+			Name = "GetTag"
+			Path = "*#36"
+			TagName = "PARO2#36"
+			Function = "GetP2#36"
+			Index = "30#9"
+			Port = "3#41"
+		/>
+		<Module
+			Name = "Measure"
+			Function = "Measure#36"
+			Interval = "00:06:00#36"
+			Input2 = "30,2#36"
+			Time = "00:01:35#36"
+			Index = "31#9"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Flash Disk\SSP.LOG#36"
+			Precision = "3#41"
+			Function = "Log#36"
+			Input2 = "31,2#36"
+			SensorName = "PARO2#36"
+			EventDriven = "0#41"
+			Index = "32#9"
+		/>
+		<Module
+			Name = "GetTag"
+			Path = "*#36"
+			TagName = "P2STD#36"
+			Function = "GetP2STD#36"
+			Index = "33#9"
+			Port = "3#41"
+		/>
+		<Module
+			Name = "Measure"
+			Function = "Measure#36"
+			Interval = "00:06:00#36"
+			Input2 = "33,2#36"
+			Time = "00:01:35#36"
+			Index = "34#9"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Flash Disk\SSP.LOG#36"
+			Precision = "3#41"
+			Function = "Log#36"
+			Input2 = "34,2#36"
+			SensorName = "P2STD#36"
+			EventDriven = "0#41"
+			Index = "35#9"
+		/>
+		<Module
+			Name = "SelfTimed"
+			Offset = "00:01:35#36"
+			Function = "SelfTimed#36"
+			Interval = "00:06:00#36"
+			Input2 = "32,2#36"
+			Sequence = "1#41"
+			UseCalcTime = "0#41"
+			NumVals = "20#41"
+			Index = "36#9"
+			Label = "PARO2#36"
+		/>
+		<Module
+			Name = "GetTag"
+			Path = "*#36"
+			TagName = "P2OUT#36"
+			Function = "GetP2OUT#36"
+			Index = "37#9"
+			Port = "3#41"
+		/>
+		<Module
+			Name = "Measure"
+			Function = "Measure#36"
+			Interval = "00:06:00#36"
+			Input2 = "37,2#36"
+			Time = "00:01:35#36"
+			Index = "38#9"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Flash Disk\SSP.LOG#36"
+			Precision = "0#41"
+			Function = "Log#36"
+			Input2 = "38,2#36"
+			SensorName = "P2OUT#36"
+			EventDriven = "0#41"
+			Index = "39#9"
+		/>
+		<Module
+			Name = "SelfTimed"
+			Offset = "00:01:35#36"
+			Function = "SelfTimed#36"
+			Interval = "00:06:00#36"
+			Input2 = "35,2#36"
+			Sequence = "2#41"
+			UseCalcTime = "0#41"
+			NumVals = "10#41"
+			Index = "40#9"
+			Label = "P2STD#36"
+		/>
+		<Module
+			Name = "SelfTimed"
+			Offset = "00:01:35#36"
+			Function = "SelfTimed#36"
+			Interval = "00:06:00#36"
+			Input2 = "39,2#36"
+			Sequence = "3#41"
+			UseCalcTime = "0#41"
+			NumVals = "10#41"
+			Index = "41#9"
+			Label = "P2OUT#36"
+		/>
+		<Module
+			Name = "SendTime"
+			Path = "*#36"
+			Function = "SendTime#36"
+			Interval = "06:00:00#36"
+			Time = "00:00:00#36"
+			Index = "42#9"
+			Port = "3#41"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Flash Disk\PARO1.log#36"
+			Precision = "3#41"
+			Function = "P1RTD#36"
+			Input2 = "5,2#36"
+			SensorName = "PARO1RTD#36"
+			EventDriven = "0#41"
+			Index = "43#9"
+		/>
+		<Module
+			Name = "RMYoung"
+			InputChannel = "1#9"
+			ModNameDir = "2#9"
+			Function = "PWIND#36"
+			UseDigital = "1#9"
+			SpeedUnits = "1#9"
+			ModNameSpeed = "1#9"
+			ExcitationChannel = "2#9"
+			SpeedChannel = "7#9"
+			Index = "44#9"
+		/>
+		<Module
+			Name = "VectAvg"
+			HowOften = "00:00:01:000#36"
+			Duration = "00:02:01#36"
+			Function = "VectAvg#36"
+			Input1 = "44,1#36"
+			Interval = "00:06:00#36"
+			Input3 = "44,3#36"
+			Time = "00:04:00#36"
+			Index = "45#9"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Flash Disk\SSP.log#36"
+			Precision = "1#41"
+			Function = "PWS#36"
+			Input2 = "45,0#36"
+			SensorName = "PWS#36"
+			EventDriven = "0#41"
+			Index = "46#9"
+		/>
+		<Module
+			Name = "SelfTimed"
+			Offset = "00:00:00#36"
+			Function = "SelfTimed#36"
+			Interval = "00:06:00#36"
+			Input2 = "46,2#36"
+			Sequence = "1#41"
+			UseCalcTime = "0#41"
+			NumVals = "30#41"
+			Index = "47#9"
+			Label = "PWS#36"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Flash Disk\SSP.LOG#36"
+			Precision = "0#41"
+			Function = "PWD#36"
+			Input2 = "45,4#36"
+			SensorName = "PWD#36"
+			EventDriven = "0#41"
+			Index = "48#9"
+		/>
+		<Module
+			Name = "SelfTimed"
+			Offset = "00:00:00#36"
+			Function = "SelfTimed#36"
+			Interval = "00:06:00#36"
+			Input2 = "48,2#36"
+			Sequence = "1#41"
+			UseCalcTime = "0#41"
+			NumVals = "30#41"
+			Index = "49#9"
+			Label = "PWD#36"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Flash Disk\SSP.LOG#36"
+			Precision = "1#41"
+			Function = "PWG#36"
+			Input2 = "52,3#36"
+			SensorName = "PWG#36"
+			EventDriven = "0#41"
+			Index = "50#9"
+		/>
+		<Module
+			Name = "SelfTimed"
+			Offset = "00:00:00#36"
+			Function = "SelfTimed#36"
+			Interval = "00:06:00#36"
+			Input2 = "50,2#36"
+			Sequence = "1#41"
+			UseCalcTime = "0#41"
+			NumVals = "30#41"
+			Index = "51#9"
+			Label = "PWG#36"
+		/>
+		<Module
+			Name = "MinMax"
+			RMaxVal = "#36"
+			StartTime = "00:00:00#36"
+			Function = "MinMax#36"
+			Interval = "00:06:00#36"
+			Input2 = "53,1#36"
+			Index = "52#9"
+		/>
+		<Module
+			Name = "MovingAverage"
+			HowOften = "00:00:01:000#36"
+			Duration = "00:00:05#36"
+			Function = "MovingAverage#36"
+			CircularInput = "0#41"
+			Interval = "12:00:00#36"
+			Input2 = "44,1#36"
+			Time = "00:00:00#36"
+			Index = "53#9"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Storage Card\SSP.LOG#36"
+			Precision = "3#41"
+			Function = "Log#36"
+			Input2 = "1,0#36"
+			SensorName = "PARO1#36"
+			EventDriven = "0#41"
+			Index = "54#9"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Storage Card\SSP.LOG#36"
+			Precision = "3#41"
+			Function = "Log#36"
+			Input2 = "1,1#36"
+			SensorName = "P1STD#36"
+			EventDriven = "0#41"
+			Index = "55#9"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Storage Card\SSP.LOG#36"
+			Precision = "0#41"
+			Function = "Log#36"
+			Input2 = "1,4#36"
+			SensorName = "P1OUT#36"
+			EventDriven = "0#41"
+			Index = "56#9"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Storage Card\TSU1MIN.LOG#36"
+			Precision = "3#41"
+			Function = "Log#36"
+			Input2 = "6,2#36"
+			SensorName = "TWL#36"
+			EventDriven = "0#41"
+			Index = "57#9"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Storage Card\SSP.LOG#36"
+			Precision = "3#41"
+			Function = "Log#36"
+			Input2 = "13,2#36"
+			SensorName = "DAT#36"
+			EventDriven = "0#41"
+			Index = "58#9"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Storage Card\SSP.LOG#36"
+			Precision = "3#41"
+			Function = "Log#36"
+			Input2 = "16,2#36"
+			SensorName = "SNS#36"
+			EventDriven = "0#41"
+			Index = "59#9"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Storage Card\SSP.LOG#36"
+			Precision = "1#41"
+			Function = "Log#36"
+			Input2 = "23,2#36"
+			SensorName = "BAT#36"
+			EventDriven = "0#41"
+			Index = "60#9"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Storage Card\SSP.LOG#36"
+			Precision = "1#41"
+			Function = "Log#36"
+			Input2 = "27,2#36"
+			SensorName = "BP#36"
+			EventDriven = "0#41"
+			Index = "61#9"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Storage Card\SSP.LOG#36"
+			Precision = "3#41"
+			Function = "Log#36"
+			Input2 = "31,2#36"
+			SensorName = "PARO2#36"
+			EventDriven = "0#41"
+			Index = "62#9"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Storage Card\SSP.LOG#36"
+			Precision = "3#41"
+			Function = "Log#36"
+			Input2 = "34,2#36"
+			SensorName = "P2STD#36"
+			EventDriven = "0#41"
+			Index = "63#9"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Storage Card\SSP.LOG#36"
+			Precision = "0#41"
+			Function = "Log#36"
+			Input2 = "38,2#36"
+			SensorName = "P2OUT#36"
+			EventDriven = "0#41"
+			Index = "64#9"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Storage Card\SSP.LOG#36"
+			Precision = "1#41"
+			Function = "Log#36"
+			Input2 = "52,3#36"
+			SensorName = "PWG#36"
+			EventDriven = "0#41"
+			Index = "65#9"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Storage Card\SSP.LOG#36"
+			Precision = "1#41"
+			Function = "Log#36"
+			Input2 = "45,0#36"
+			SensorName = "PWS#36"
+			EventDriven = "0#41"
+			Index = "66#9"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			UseScheduledTime = "1#41"
+			LogFile = "\Storage Card\SSP.LOG#36"
+			Precision = "0#41"
+			Function = "Log#36"
+			Input2 = "45,4#36"
+			SensorName = "PWD#36"
+			EventDriven = "0#41"
+			Index = "67#9"
+		/>
+	</ModuleList>
+	<LogList>
+		<Log
+			Name = "\Storage Card\TSU1MIN.LOG"
+			Size = "250019840"
+			Wrap = "true"
+			IgnoreQuality = "false"
+			AddHeaderOnExport = "true"
+			ReplaceBadValOnExport = "false"
+			BadValOnExport = "-99999"
+		/>
+		<Log
+			Name = "\Storage Card\SSP.LOG"
+			Size = "250019840"
+			Wrap = "true"
+			IgnoreQuality = "false"
+			AddHeaderOnExport = "true"
+			ReplaceBadValOnExport = "false"
+			BadValOnExport = "-99999"
+		/>
+		<Log
+			Name = "\Flash Disk\PARO1.log"
+			Size = "119936"
+			Wrap = "true"
+			IgnoreQuality = "false"
+			AddHeaderOnExport = "true"
+			ReplaceBadValOnExport = "false"
+			BadValOnExport = "-99999"
+		/>
+		<Log
+			Name = "\Flash Disk\TSU1MIN.LOG"
+			Size = "1200000"
+			Wrap = "true"
+			IgnoreQuality = "false"
+			AddHeaderOnExport = "true"
+			ReplaceBadValOnExport = "false"
+			BadValOnExport = "-99999"
+		/>
+		<Log
+			Name = "\Flash Disk\System.log"
+			Size = "65536"
+			Wrap = "true"
+			IgnoreQuality = "false"
+			AddHeaderOnExport = "true"
+			ReplaceBadValOnExport = "false"
+			BadValOnExport = "-99999"
+		/>
+		<Log
+			Name = "\Flash Disk\SSP.LOG"
+			Size = "1200000"
+			Wrap = "true"
+			IgnoreQuality = "false"
+			AddHeaderOnExport = "true"
+			ReplaceBadValOnExport = "false"
+			BadValOnExport = "-99999"
+		/>
+	</LogList>
+	<SelfTest>
+		<Common
+			ExternalLoopback = "1"
+			PCMCIA = "1"
+			PowerConsumption = "1"
+			XliteButton = "1"
+			XliteIOHeader = "1"
+		/>
+	</SelfTest>
+	<ComsMgr>
+		<Com1
+			Disable = "1#41"
+			Connection = "1#41"
+			BaudRate = "115200#44"
+		/>
+		<Com2
+		/>
+		<Com3
+			Connection = "4#41"
+			BaudRate = "115200#44"
+		/>
+		<Com4
+			Connection = "5#41"
+			BaudRate = "4800#44"
+		/>
+		<Com6
+			BaudRate = "115200#36"
+		/>
+		<Com7
+			Disable = "1#41"
+			BaudRate = "115200#36"
+		/>
+		<Com8
+			Connection = "3#41"
+			BaudRate = "19200#44"
+		/>
+		<Com9
+			Connection = "3#41"
+			BaudRate = "19200#44"
+		/>
+	</ComsMgr>
+	<Satlink>
+		<Common
+			Port = "0"
+			SatID = "3363B20A"
+			InitSatlink = "1"
+			LTO = "0"
+		/>
+		<SelfTimed
+			Enabled = "1"
+			LatLon = "0"
+			Quality = "0"
+			Channel = "148"
+			Type = "0"
+			Format = "4"
+			Time = "00:03:30"
+			Rate = "00:06:00"
+			CenterWin = "0"
+			WinLen = "00:00:05"
+			NumVals = "10"
+			EnableSatID2 = "0"
+			SatID2 = "00000000"
+			SCDChannel = "1"
+		/>
+		<Random
+			Enabled = "0"
+			LatLon = "0"
+			Quality = "0"
+			Channel = "151"
+			NormRate = "12:00:00"
+			AlarmRate = "01:00:00"
+			Type = "0"
+			BurstCount = "3"
+			BurstRate = "00:01:00"
+			Format = "0"
+			NumVals = "1"
+		/>
+	</Satlink>
+	<BasicMgr>
+		<Settings
+			GoesSelfTimedFunction = "STFORMATTER#36"
+		/>
+		<Schedule
+			Subroutine = "SENDSBD#36"
+			Interval = "00:06:00#36"
+			Time = "00:04:00#36"
+		/>
+		<Schedule
+			Subroutine = "MSGFILER#36"
+			Interval = "00:06:00#36"
+			Time = "00:05:00#36"
+		/>
+	</BasicMgr>
+</SetupFile>

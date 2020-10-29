@@ -1,0 +1,9 @@
+Sequence #,Description, DPAS Code, Flag, log label, #ST, #RR, Format, Aux1, Aux2, Aux3, Aux4/Header=P
+1,Aquatrak,A1,1,PWL,10,3,TAQUATRAK3,PSIG,POUT,AQT1,AQT2
+2,PWindbird,C1,3,PWS,1,3,WSWDG,PWD,PWG
+3,Air Temp,D1,4,AT,1,3,SVS
+4,Water Temp,E1,5,WT,1,3,SVS
+5,FSI Water Temp,E2,5,CTWT,1,3,SVS
+6,Barometer,F1,6,BP,1,3,BAROM
+7,FSI Conductivity,G1,7,COND,1,3,SVS
+8,BAT,L1,<,BAT,1,3,SV

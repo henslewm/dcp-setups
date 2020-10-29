@@ -1,0 +1,259 @@
+<SetupFile>
+	<Engine>
+		<Settings
+			Version = "3.19.0.10"
+		/>
+	</Engine>
+	<ModuleList>
+		<Module
+			Name = "IntBat"
+			Function = "IntBat#36"
+			TempUnits = "0#9"
+			TempOnly = "0#9"
+			CalOffset = "0#18"
+			Index = "0#9"
+		/>
+		<Module
+			Name = "Measure"
+			Function = "Measure#36"
+			Interval = "00:06:00#36"
+			Input2 = "0,1#36"
+			Index = "1#9"
+			Time = "00:00:00#36"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			Function = "Log#36"
+			EventDriven = "0#9"
+			LogFile = "\Flash Disk\ssp.log#36"
+			SensorName = "BAT#36"
+			Precision = "1#9"
+			Input2 = "1,2#36"
+			UseScheduledTime = "1#9"
+			Index = "2#9"
+			UsePrecision = "1#9"
+		/>
+		<Module
+			Name = "ADC"
+			Offset = "-3.75#18"
+			XOn = "0#9"
+			Warmup = "100#9"
+			XChannel = "2#9"
+			Function = "ADC#36"
+			InputChannel = "1#9"
+			Use80800003 = "1#9"
+			Slope = "3.75#18"
+			Differential = "0#9"
+			FilterNotch = "60#9"
+			IODeviceName = "1#9"
+			ADCReadingType = "0#9"
+			XVoltage = "3#9"
+			Units = "m#36"
+			Resistor = "20#18"
+			Index = "3#9"
+		/>
+		<Module
+			Name = "Measure"
+			Function = "Measure#36"
+			Interval = "00:00:01#36"
+			Input2 = "3,2#36"
+			Index = "4#9"
+			Time = "00:00:00#36"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			Function = "Log#36"
+			EventDriven = "0#9"
+			LogFile = "\SD Card\SSP.log#36"
+			SensorName = "W#36"
+			Precision = "3#9"
+			Input2 = "4,2#36"
+			UseScheduledTime = "1#9"
+			Index = "5#9"
+			UsePrecision = "1#9"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			Function = "Log#36"
+			EventDriven = "0#9"
+			LogFile = "\Flash Disk\ssp.log#36"
+			SensorName = "W#36"
+			Precision = "3#9"
+			Input2 = "4,2#36"
+			UseScheduledTime = "1#9"
+			Index = "6#9"
+			UsePrecision = "1#9"
+		/>
+	</ModuleList>
+	<LogList>
+		<Log
+			Name = "\SD Card\TSU1MIN.LOG"
+			Size = "12000000"
+			Wrap = "true"
+			IgnoreQuality = "false"
+			AddHeaderOnExport = "true"
+			ReplaceBadValOnExport = "false"
+			BadValOnExport = "-99999"
+			RecordIDBeforeDate = "false"
+			IncludeFieldHeader = "true"
+			IncludeUnitsHeader = "false"
+			PrintNOTE = "false"
+		/>
+		<Log
+			Name = "\SD Card\SSP.log"
+			Size = "100000000"
+			Wrap = "true"
+			IgnoreQuality = "false"
+			AddHeaderOnExport = "true"
+			ReplaceBadValOnExport = "false"
+			BadValOnExport = "-99999"
+			RecordIDBeforeDate = "false"
+			IncludeFieldHeader = "true"
+			IncludeUnitsHeader = "false"
+			PrintNOTE = "false"
+		/>
+		<Log
+			Name = "\SD Card\SYSTEM.LOG"
+			Size = "65536"
+			Wrap = "true"
+			IgnoreQuality = "false"
+			AddHeaderOnExport = "true"
+			ReplaceBadValOnExport = "false"
+			BadValOnExport = "-99999"
+			RecordIDBeforeDate = "false"
+			IncludeFieldHeader = "true"
+			IncludeUnitsHeader = "false"
+			PrintNOTE = "false"
+		/>
+		<Log
+			Name = "\Flash Disk\TSU1MIN.LOG"
+			Size = "640000"
+			Wrap = "true"
+			IgnoreQuality = "false"
+			AddHeaderOnExport = "true"
+			ReplaceBadValOnExport = "false"
+			BadValOnExport = "-99999"
+			RecordIDBeforeDate = "false"
+			IncludeFieldHeader = "true"
+			IncludeUnitsHeader = "false"
+			PrintNOTE = "false"
+		/>
+		<Log
+			Name = "\Flash Disk\system.log"
+			Size = "2097152"
+			Wrap = "true"
+			IgnoreQuality = "false"
+			AddHeaderOnExport = "true"
+			ReplaceBadValOnExport = "false"
+			BadValOnExport = "-99999"
+			RecordIDBeforeDate = "false"
+			IncludeFieldHeader = "true"
+			IncludeUnitsHeader = "false"
+			PrintNOTE = "false"
+		/>
+		<Log
+			Name = "\Flash Disk\ssp.log"
+			Size = "1048576"
+			Wrap = "true"
+			IgnoreQuality = "false"
+			AddHeaderOnExport = "true"
+			ReplaceBadValOnExport = "false"
+			BadValOnExport = "-99999"
+			RecordIDBeforeDate = "false"
+			IncludeFieldHeader = "true"
+			IncludeUnitsHeader = "false"
+			PrintNOTE = "false"
+		/>
+	</LogList>
+	<SelfTest>
+		<Common
+			ExternalLoopback = "1"
+			CFCard = "0"
+			SDCard = "1"
+			USBCard = "1"
+			PowerConsumption = "1"
+			XliteButton = "1"
+			XliteIOHeader = "1"
+			Ethernet = "1"
+		/>
+	</SelfTest>
+	<Satlink>
+		<Common
+			Port = "0"
+			SatID = "33602EB4"
+			InitSatlink = "0"
+			LTO = "0"
+			Antenna = "Dome/Hat (5.5-8db)"
+		/>
+		<SelfTimed
+			Enabled = "1"
+			LatLon = "0"
+			Quality = "0"
+			Channel = "225"
+			Type = "GOES 1200"
+			Format = "SHEF"
+			Time = "00:01:52"
+			Rate = "00:06:00"
+			CenterWin = "0"
+			WinLen = "00:00:08"
+			NumVals = "1"
+			EnableSatID2 = "0"
+			SatID2 = "00000000"
+			SCDChannel = "1"
+		/>
+		<Random
+			Enabled = "0"
+			LatLon = "0"
+			Quality = "0"
+			Channel = "151"
+			NormRate = "12:00:00"
+			AlarmRate = "01:00:00"
+			Type = "CGMS 100 INTL"
+			BurstCount = "3"
+			BurstRate = "00:01:00"
+			Format = "0"
+			NumVals = "1"
+		/>
+	</Satlink>
+	<BasicMgr>
+		<Settings
+			GPRSSelfTimedFunction = "&lt;None&gt;#36"
+			IridiumForcedFunction = "&lt;None&gt;#36"
+			GPRSForcedFunction = "&lt;None&gt;#36"
+			GPRSAlarmFunction = "&lt;None&gt;#36"
+			IridiumSelfTimedFunction = "&lt;None&gt;#36"
+			IridiumAlarmFunction = "&lt;None&gt;#36"
+			GoesRandomFunction = "&lt;None&gt;#36"
+			RunAlways = "0#9"
+			GoesSelfTimedFunction = "STFORMATTER#36"
+		/>
+	</BasicMgr>
+	<ComsMgr>
+		<Com1
+			Disable = "1#9"
+			Connection = "1#9"
+		/>
+		<Com2
+			BaudRate = "9600#36"
+		/>
+		<Com3
+			BaudRate = "9600#36"
+		/>
+		<Com4
+			BaudRate = "9600#36"
+		/>
+		<Com6
+		/>
+		<Com7
+		/>
+		<Com8
+		/>
+		<Com9
+		/>
+		<Tcpip
+		/>
+	</ComsMgr>
+</SetupFile>

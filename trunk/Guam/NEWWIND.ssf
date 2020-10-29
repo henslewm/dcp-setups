@@ -1,0 +1,116 @@
+<SetupFile>
+	<ModuleList>
+		<Module
+			Name = "RMYoung"
+			InputChannel = "1#41"
+			ModNameDir = "2#41"
+			Function = "PWIND#36"
+			UseDigital = "1#41"
+			SpeedUnits = "1#41"
+			ModNameSpeed = "1#41"
+			ExcitationChannel = "2#41"
+			SpeedChannel = "7#41"
+			Index = "0#9"
+		/>
+		<Module
+			Name = "VectAvg"
+			HowOften = "00:00:01:000#36"
+			Duration = "00:02:01#36"
+			Function = "VectAvg#36"
+			Input1 = "0,1#36"
+			Interval = "00:06:00#36"
+			Input3 = "0,3#36"
+			Time = "00:04:00#36"
+			Index = "1#9"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			LogFile = "\Flash Disk\SSP.log#36"
+			Precision = "1#41"
+			Function = "PWS#36"
+			Input2 = "1,0#36"
+			SensorName = "PWS#36"
+			EventDriven = "0#41"
+			Index = "2#9"
+		/>
+		<Module
+			Name = "SelfTimed"
+			Offset = "00:00:00#36"
+			Function = "SelfTimed#36"
+			Interval = "00:06:00#36"
+			Input2 = "2,2#36"
+			Sequence = "1#41"
+			UseCalcTime = "0#41"
+			NumVals = "30#41"
+			Index = "3#9"
+			Label = "PWS#36"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			LogFile = "\Flash Disk\SSP.LOG#36"
+			Precision = "0#41"
+			Function = "PWD#36"
+			Input2 = "1,4#36"
+			SensorName = "PWD#36"
+			EventDriven = "0#41"
+			Index = "4#9"
+		/>
+		<Module
+			Name = "SelfTimed"
+			Offset = "00:00:00#36"
+			Function = "SelfTimed#36"
+			Interval = "00:06:00#36"
+			Input2 = "4,2#36"
+			Sequence = "1#41"
+			UseCalcTime = "0#41"
+			NumVals = "30#41"
+			Index = "5#9"
+			Label = "PWD#36"
+		/>
+		<Module
+			Name = "Log"
+			FixedInterval = "00:00:00#36"
+			LogFile = "\Flash Disk\SSP.LOG#36"
+			Precision = "1#41"
+			Function = "Log#36"
+			Input2 = "8,3#36"
+			SensorName = "PWG#36"
+			EventDriven = "0#41"
+			Index = "6#9"
+		/>
+		<Module
+			Name = "SelfTimed"
+			Offset = "00:00:00#36"
+			Function = "SelfTimed#36"
+			Interval = "00:06:00#36"
+			Input2 = "6,2#36"
+			Sequence = "1#41"
+			UseCalcTime = "0#41"
+			NumVals = "30#41"
+			Index = "7#9"
+			Label = "PWG#36"
+		/>
+		<Module
+			Name = "MinMax"
+			RMaxVal = "#36"
+			StartTime = "00:00:00#36"
+			Function = "MinMax#36"
+			Interval = "00:06:00#36"
+			Input2 = "9,1#36"
+			Index = "8#9"
+		/>
+		<Module
+			Name = "MovingAverage"
+			HowOften = "00:00:01:000#36"
+			Duration = "00:00:05#36"
+			Function = "MovingAverage#36"
+			CircularInput = "0#41"
+			Interval = "12:00:00#36"
+			Input2 = "0,1#36"
+			Time = "00:00:00#36"
+			Index = "9#9"
+		/>
+	</ModuleList>
+	</SetupFile>

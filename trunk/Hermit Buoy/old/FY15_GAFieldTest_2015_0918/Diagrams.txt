@@ -1,0 +1,19 @@
+DCP1
+     DCP1 NOS G3 Main Station
+           XPERT2 Datalogger
+           NOS G3 Main Station Power
+     Analog 1 (AT, WT)
+     Analog 2 (Windbird Direction and Reference)
+           Primary Windbird Sensor Wiring
+     Digital 1 (Windbird Speed)
+     SDI-12 (Design Analysis H-3611)
+           Design Analysis H-3611 Cable Wiring
+           IMO Relay Wiring for Design Analysis H-3611
+     COM2 (Satlink)
+     COM4 (Primary to Backup)
+DCP 2
+     SDI-12 (WaterLog H-355 for PAROS1)
+     COM4 (Backup to Primary)
+     COM6 (PAROS 1)
+           PAROS Cable Wiring
+           Jumper Settings for +12VDC on DCP2 COM6 XPERT2
