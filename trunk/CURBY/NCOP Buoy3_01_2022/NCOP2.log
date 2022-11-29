@@ -1,0 +1,55 @@
+============================================================
+Deployment   : NCOP2
+Current time : 1/24/2022 10:01:31 AM
+Start at     : 1/24/2022 10:00:46 AM
+Comment:
+
+------------------------------------------------------------
+Profile interval      (s) : 360
+Number of cells           : 16
+Cell size             (m) : 1.00
+Blanking distance     (m) : 0.50
+Z-cell size           (m) : 0.60
+Z-cell blanking dist. (m) : 0.40
+Measurement load      (%) : 50
+Average interval      (s) : 300
+Power level               : HIGH
+Z-cell power level        : HIGH-
+Wave data collection      : DISABLED
+Compass upd. rate     (s) : 1
+Coordinate System         : ENU
+Speed of sound      (m/s) : MEASURED
+Salinity            (ppt) : 35
+Analog input 1            : PROFILE
+Analog input 2            : PROFILE
+Analog input power out    : ENABLED
+File wrapping             : OFF
+TellTale                  : OFF
+Acoustic modem            : OFF
+Serial output             : ON
+Baud rate                 : 9600
+------------------------------------------------------------
+Assumed duration   (days) : 30.0
+Battery utilization   (%) : 512.0
+Battery level         (V) : 14.9
+Recorder size        (MB) : 15185
+Recorder free space  (MB) : 15184.972
+Memory required      (MB) : 1.2
+Vertical vel. prec (cm/s) : 0.7
+Horizon. vel. prec (cm/s) : 2.0
+------------------------------------------------------------
+Instrument ID             : AQD16613
+Head ID                   : A6Z 11044
+Firmware version          : 3.43
+ProLog ID                 : 3968
+ProLog firmware version   : 4.24
+------------------------------------------------------------
+SD Card Inserted          : YES
+SD Card Ready             : YES
+SD Card Write protected   : NO
+SD Card Type              : SDHC
+SD Card Supported         : YES
+------------------------------------------------------------
+AquaPro Version 2.00.02
+Copyright (C) Nortek AS
+============================================================

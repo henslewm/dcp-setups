@@ -1,0 +1,5 @@
+Sequence #,Description, DPAS Code, Flag, log label, #ST, #RR, Format, Aux1, Aux2, Aux3, Aux4/Header=P
+1,AirMarWind,C1,3,PWS,1,3,TWSWDG,PWD,PWG
+2,Air Temp,D1,4,AT,1,3,SVS
+3,Baro,F1,6,BP,1,3,BAROM
+4,BAT,L1,<,BAT,1,3,SV
